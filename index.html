@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <title>WebGL Globe</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+    @import url("css/main.css");
+    </style>
+</head>
+<body>
+
+    <div id="container" class="container"></div>
+
+    <!-- container1是3D界面（webgl） -->
+    <div id="container1" class="container">
+        <canvas id="webGL" class="webGL"></canvas>
+    </div>
+
+    <!-- container2是各种载入器（loader） -->
+    <div id="container2" class="container">
+
+        <div id="loaders" class="loaders">
+            <!-- 载入器1（loaders） -->
+
+            <form>
+                <span class="inputText1">+</span>
+                <input type="file" class="filePrew" id="input1" />
+            </form>
+
+            <div id="loader1" class="loader">
+                <canvas id="loader1Canvas" width="200" height="200" class="canvas"></canvas>
+
+            </div>
+
+            <form>
+                <span class="inputText2">+</span>
+                <input type="file" class="filePrew" id="input2" />
+            </form>
+
+            <div id="loader2" class="loader">
+                <canvas id="loader2Canvas" width="200" height="200" class="canvas"></canvas>
+
+            </div>
+        </div>
+
+        <div id="selector" class="selector"></div>
+        <div id="selector1" class="selector1"></div>
+        <div id="selector2" class="selector2"></div>
+
+    </div>
+    </div>
+
+    <script type="text/javascript" src="plugins/three.min.js"></script>
+    <script type="text/javascript" src="plugins/jquery-2.0.3.min.js"></script>
+
+    <script type="text/javascript" src="script/InitStyle.js"></script>
+
+    <script type="text/javascript" src="script/AddSelector.js"></script>
+    <script type="text/javascript" src="script/ColorSpace.js"></script>
+    <script type="text/javascript" src="script/InitThree.js"></script>
+    <script type="text/javascript" src="script/InitInteractions.js"></script>
+    <script type="text/javascript" src="script/InitAxis.js"></script>
+    <script type="text/javascript" src="script/InitVisual.js"></script>
+    <script type="text/javascript" src="script/Cluster.js"></script>
+    <script type="text/javascript" src="Main.js"></script>
+
+    <script type="text/javascript">
+    </script>
+</body>
+
+</html>
